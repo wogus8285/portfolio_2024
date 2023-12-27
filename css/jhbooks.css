@@ -236,6 +236,7 @@
   width: 938px;
   margin: 0 auto;
   padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .container .apply .text_wrap ul {
@@ -247,13 +248,19 @@
 .container .apply .text_wrap li {
   display: flex;
   gap: 10px;
+  /* align-items: center; */
 }
 
 .container .apply .text_wrap li h5 {
   width: 100px;
+  color: #444;
+  font-weight: 600;
+  text-align: center;
 }
 .container .apply .text_wrap li p {
   width: 100%;
+  color: #777;
+  font-weight: 500;
 }
 
 .container .apply {
