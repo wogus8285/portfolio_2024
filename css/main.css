@@ -5,21 +5,59 @@
 #fullpage .section .fp-tableCell {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #fullpage .section .left {
-  padding-left: 410px;
   padding-top: 170px;
 }
+
 #fullpage .section .right {
-  padding-right: 560px;
 }
 
-#fullpage .section .right img {
+/* #fullpage .section .right img {
   display: block;
   width: 500px;
   height: 630px;
+} */
+
+#fullpage .section .right {
+  width: 500px;
+  height: 630px;
+  margin-right: 70px;
+  transition: all 0.5s;
+}
+
+#fullpage .section_1 .right {
+  background: url(../images/jhbook.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+#fullpage .section_2 .right {
+  background: url(../images/Busan.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+#fullpage .section_3 .right {
+  background: url(../images/SamFire.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+#fullpage .section .right:hover {
+  /* transition: all 1s; */
+}
+#fullpage .section_1 .right:hover {
+  background: url(../images/jhbook_hover.png);
+}
+#fullpage .section_2 .right:hover {
+  background: url(../images/Busan_hover.svg);
+}
+#fullpage .section_3 .right:hover {
+  background: url(../images/SamFire_hover.png);
 }
 
 #fullpage .section .left .intro {
@@ -42,9 +80,10 @@
   color: #fff;
 }
 
-#fullpage .section .left .p3 {
+#fullpage .section a.p3 {
   color: #333;
   font-weight: 700;
+  display: block;
   padding-top: 13px;
   padding-left: 5px;
 }

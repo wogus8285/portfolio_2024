@@ -1,0 +1,233 @@
+/* ## header */
+.header {
+  position: inherit;
+}
+
+.logo_wrap {
+  /* background-color: rgba(254, 254, 251, 0.7); */
+  /* backdrop-filter: blur(3px); */
+}
+
+/*  */
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+/* ## link */
+.link ul {
+  /* margin-top: 100px; */
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+.link ul li.busan {
+  width: 100%;
+  background-color: #59b548;
+  display: flex;
+  justify-content: right;
+}
+.link ul li.fire {
+  width: 100%;
+  background-color: #388fe4;
+}
+
+.link ul li a {
+  display: block;
+  height: 500px;
+  width: 400px;
+  background: url(../images/jhbook_hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.link ul li.busan a {
+  background: url(../images/Busan.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  object-fit: right;
+  background-size: cover;
+  /* margin-left: ; */
+}
+
+.link ul li.fire a {
+  background: url(../images/SamFire.jpg);
+  background-position: left;
+  background-size: cover;
+}
+
+/* ## body */
+
+/* # hero */
+.hero {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 타이틀 */
+.hero .title h2 {
+  font-weight: 700;
+}
+
+.hero .title p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.hero .container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+/* 스크롤 애니메이션 */
+.hero .photo {
+  width: 400px;
+  height: 480px;
+  background-color: #ddd;
+  border-radius: 30px;
+  border: 4px solid #444;
+  overflow: hidden;
+  background: url(../images/web_top.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 400px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  top: 36px;
+  transition: all 0.9s;
+}
+
+.hero .photo:hover {
+}
+
+.hero .photo:hover img {
+  top: -170px;
+  transition: all 2s;
+}
+
+/* 글자 */
+.hero .text_box {
+  width: 500px;
+}
+
+.hero .text_box h5 {
+}
+
+.hero .text_box p {
+  padding-top: 40px;
+  font-weight: 400;
+  line-height: 2;
+  color: #444;
+}
+
+/* # 배너 */
+.banner {
+  width: 100%;
+  height: 460px;
+  background: linear-gradient(to bottom, #222222 0%, #1a1a1a 100%);
+  margin: 140px 0;
+  padding: 0 auto;
+}
+
+.banner .container {
+  display: flex;
+  height: 460px;
+  justify-content: space-between;
+}
+
+.banner .text_box {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.banner .text_box .p2 {
+  text-align: right;
+  font-weight: 200;
+  color: #ddd;
+}
+
+.banner .text_box h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.banner .text_box p {
+  font-weight: 300;
+  color: #eee;
+  padding-bottom: 40px;
+  text-align: right;
+  padding-top: 10px;
+}
+
+/* ## 섹션들 */
+/* #섹션 1 */
+.container .section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.container .section .title span {
+  /* display: block; */
+  padding: 0 15px;
+  border-radius: 5px;
+  background-color: #111;
+  color: #fff;
+}
+.container .section .title {
+  padding-bottom: 100px;
+}
+
+.container .section .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.container .section.one .item {
+  padding: 0 50px;
+}
+
+.container .section .text {
+  width: 700px;
+  line-height: 200%;
+}
+.container .section .text p {
+  padding: 10px;
+}
+
+/* 적용 */
+.container .apply h6 {
+  font-weight: 600;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 45px;
+}
+.container .apply.one .photo_wrap {
+  display: flex;
+  gap: 60px;
+  text-align: center;
+}
+.container .apply {
+}
+.container .apply {
+}
+.container .apply {
+}
+.container .apply {
+}
+.container .apply {
+}
