@@ -207,12 +207,14 @@
 }
 .container .section .text p {
   padding: 10px;
+  color: #555;
 }
 
 /* 적용 */
 .container .apply h6 {
   font-weight: 600;
   text-align: center;
+  color: #444;
   padding-top: 80px;
   padding-bottom: 45px;
 }
@@ -221,12 +223,39 @@
   gap: 60px;
   text-align: center;
 }
-.container .apply {
+
+.container .apply img {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
-.container .apply {
+
+.container .apply .photo_wrap {
+  margin-bottom: 70px;
 }
-.container .apply {
+
+.container .apply .text_wrap {
+  width: 938px;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
+
+.container .apply .text_wrap ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container .apply .text_wrap li {
+  display: flex;
+  gap: 10px;
+}
+
+.container .apply .text_wrap li h5 {
+  width: 100px;
+}
+.container .apply .text_wrap li p {
+  width: 100%;
+}
+
 .container .apply {
 }
 .container .apply {
