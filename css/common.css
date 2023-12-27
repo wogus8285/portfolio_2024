@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@600&display=swap');
+
+/* font-family: 'Nanum Pen Script', cursive; */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+  line-height: 1.3;
+}
+
+.logo {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 50px;
+  color: #333;
+  cursor: pointer;
+}
+/*
+  100 - thin
+  200 - 엑스트라라잍
+  300 - 라잇
+  400  - 레귤
+  500 - 미뎜
+  600 - 세미볼ㄷ
+  700 - bold
+  800 - 엑스트라볼ㄷ
+  900 - 블랙
+*/

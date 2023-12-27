@@ -1,0 +1,75 @@
+.wrap {
+}
+
+/* ## 풀페이지 */
+#fullpage .section .fp-tableCell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#fullpage .section .left {
+  padding-left: 410px;
+  padding-top: 170px;
+}
+#fullpage .section .right {
+  padding-right: 560px;
+}
+
+#fullpage .section .right img {
+  display: block;
+  width: 500px;
+  height: 630px;
+}
+
+#fullpage .section .left .intro {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+#fullpage .section .left .intro .p2 {
+  padding: 5px 0;
+  font-weight: 700;
+  color: #555;
+}
+
+#fullpage .section .left .intro .box {
+  font-weight: 600;
+  padding: 7px 12px;
+  margin-left: 3px;
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+#fullpage .section .left .p3 {
+  color: #333;
+  font-weight: 700;
+  padding-top: 13px;
+  padding-left: 5px;
+}
+
+#fullpage .section .title {
+  position: relative;
+  height: 156px;
+  padding-left: 410px;
+}
+
+#fullpage .section h1 {
+  position: absolute;
+  width: 1920px;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  letter-spacing: -5px;
+  /* line-height: auto; */
+}
+
+#fullpage .section {
+}
+
+#fullpage .section {
+}
+
+#fullpage .section {
+}
