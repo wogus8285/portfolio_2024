@@ -313,4 +313,5 @@
 
 .link_wrap h6 {
   font-weight: 600;
+  /* display: none; */
 }
