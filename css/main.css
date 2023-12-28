@@ -55,6 +55,9 @@
 }
 #fullpage .section_2 .right:hover {
   background: url(../images/Busan_hover.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 #fullpage .section_3 .right:hover {
   background: url(../images/SamFire_hover.png);

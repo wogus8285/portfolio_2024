@@ -1,0 +1,316 @@
+/* ## header */
+.header {
+  position: inherit;
+}
+
+/*  */
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+/* ## link */
+.link ul {
+  /* margin-top: 100px; */
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+.link ul li.busan {
+  width: 100%;
+  transition: all 0.2s;
+  background-color: #ffdc5b;
+}
+.link ul li.jh {
+  width: 100%;
+  background-color: #d8e0e8;
+  display: flex;
+  justify-content: right;
+}
+
+.link ul li a {
+  display: block;
+  height: 500px;
+  width: 400px;
+  background: url(../images/jhbook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.link ul li.fire a {
+  background: url(../images/SamFire_hover.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.link ul li.busan a {
+  background: url(../images/Busan.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  object-fit: right;
+  background-size: cover;
+  transition: all 0.2s;
+  /* margin-left: ; */
+}
+
+.link ul li.fire:hover a {
+  background: url(../images/SamFire.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.link ul li:hover a {
+  display: block;
+  height: 500px;
+  width: 400px;
+  background: url(../images/jhbook_hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.link ul li.busan:hover {
+  background-color: #59b548;
+}
+
+.link ul li.busan:hover a {
+  background: url(../images/Busan_hover.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  object-fit: right;
+  background-size: cover;
+}
+
+/* ## body */
+
+/* # hero */
+.hero {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 타이틀 */
+.hero .title h2 {
+  font-weight: 700;
+}
+
+.hero .title p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.hero .container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+/* 스크롤 애니메이션 */
+.hero .photo {
+  width: 400px;
+  height: 480px;
+  background-color: #ddd;
+  border-radius: 30px;
+  border: 4px solid #444;
+  overflow: hidden;
+  background: url(../images/web_top.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 400px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  top: 36px;
+  transition: all 0.9s;
+}
+
+.hero .photo:hover {
+}
+
+.hero .photo:hover img {
+  top: -455px;
+  transition: all 2.5s;
+}
+
+/* 글자 */
+.hero .text_box {
+  width: 500px;
+}
+
+.hero .text_box h5 {
+}
+
+.hero .text_box p {
+  padding-top: 40px;
+  font-weight: 400;
+  line-height: 2;
+  color: #444;
+}
+
+/* # 배너 */
+.banner {
+  width: 100%;
+  background: #fcd4d1;
+  text-align: center;
+  margin-top: 140px;
+}
+
+.banner .text_box {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  padding-top: 65px;
+}
+
+.banner h2 {
+  font-weight: 600;
+  font-size: 50px;
+  padding-bottom: 17px;
+}
+
+.banner p {
+  color: #555;
+  font-weight: 400;
+}
+
+/* ## 아이템*/
+.section {
+  height: 1870px;
+  position: relative;
+}
+
+.items {
+  position: absolute;
+  width: 1320px;
+  top: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item > div {
+  width: 660px;
+  height: 514px;
+  background-color: #f9f9f9;
+}
+
+.item .text_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.item .text_box h6 {
+  padding-left: 30px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.item .hover_box {
+  text-align: center;
+  line-height: 514px;
+  /* transition: all 0.2s; */
+}
+/* 호버박스 */
+.item.one .hover_box {
+  background: #222;
+  color: #fff;
+}
+.item.one .hover_box:hover {
+  background: url(../images/fire/hover_1.jpg);
+  /* transition: all 0.2s; */
+}
+.item .hover_box:hover h1 {
+  display: none;
+}
+.item.two .hover_box {
+  background-color: #ffe6b5;
+  color: #fd6a00;
+}
+.item.two .hover_box:hover {
+  background: url(../images/fire/hover_2.jpg);
+}
+.item.three .hover_box {
+  background-color: #e82a2a;
+  color: #f9b7b7;
+  transition: all 0.3s;
+}
+.item.three .hover_box:hover {
+  background-color: #08a2b7;
+  color: #0f2030;
+}
+.item.three .hover_box:hover h1 {
+  display: block;
+}
+.item.four .hover_box {
+  background-color: #825bc1;
+  color: #28152c;
+}
+
+.section::after {
+  content: '';
+  width: 100%;
+  height: 374px;
+  background-color: #fcd4d1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/*  */
+/*  */
+/* ##  링크 */
+.link_work {
+  height: 550px;
+  background-color: #f9f9f9;
+}
+
+.link_work img {
+  width: 140px;
+}
+
+.link_work {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.link_wrap {
+  display: flex;
+  gap: 200px;
+}
+
+.link_wrap a {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.link_wrap h6 {
+  font-weight: 600;
+}

@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  height: 500px;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .f_gnb {
+  display: flex;
+  width: 965px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .f_gnb h1 {
+  font-size: 100px;
+  font-family: 'Caveat', cursive;
+}
+
+.footer .contact p {
+  text-align: center;
+  color: #f0f0f0;
+  font-weight: 200;
+  padding-bottom: 5px;
+}
+
+.footer .contact .title {
+  padding-bottom: 10px;
+}
