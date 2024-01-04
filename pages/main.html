@@ -151,7 +151,10 @@
 
     <script>
       $(document).ready(function () {
-        $('#fullpage').fullpage()
+        $('#fullpage').fullpage({
+          loopHorizontal: true, // 수평으로 루프
+    scrollBar: true // 스크롤바 활성화
+        })
       })
     </script>
   </body>
