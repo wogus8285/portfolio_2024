@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/jhbooks.css" />
     <!-- <link rel="stylesheet" href="../css/footer.css" /> -->
+    <link rel="stylesheet" href="../css/main_inc.css" />
 
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -165,7 +166,7 @@
             </div>
           </div>
           <!-- 1-1 -->
-          <div class="apply">
+          <div class="apply one">
             <div class="photo_wrap">
               <div class="left">
                 <h6># 문피아(기존사이트)</h6>
@@ -173,7 +174,11 @@
               </div>
               <div class="right">
                 <h6># 재현북스(내가 만든 사이트)</h6>
-                <img src="../images/jh/tobe2.jpg" alt="" />
+                <div class="img">
+                  <!-- today_best.html => include -->
+
+                  <!--  -->
+                </div>
               </div>
             </div>
             <div class="text_wrap">
@@ -599,6 +604,10 @@
       // 로드
       $('.header').load('../inc/header.html')
       $('.footer').load('../inc/footer.html')
+      $('.apply.one .img').load('../inc/today_best.html')
     </script>
+
+    <!-- apply -->
+    <!--  -->
   </body>
 </html>

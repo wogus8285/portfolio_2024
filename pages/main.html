@@ -49,6 +49,13 @@
     <div class="swiper" id="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide section section_1">
+          <!-- 백그라운드 애니 -->
+          <div class="bk box">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+          </div>
+          <!--  -->
           <div class="left">
             <div class="intro">
               <div class="p2 box">내가 만든 사이트</div>
@@ -75,6 +82,13 @@
         </div>
 
         <div class="swiper-slide section section_2">
+          <!-- 백그라운드 애니 -->
+          <div class="bk box">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+          </div>
+          <!--  -->
           <div class="left">
             <div class="intro">
               <div class="p2 box">리뉴얼 사이트</div>
@@ -101,6 +115,13 @@
         </div>
 
         <div class="swiper-slide section section_3">
+          <!-- 백그라운드 애니 -->
+          <div class="bk box">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+          </div>
+          <!--  -->
           <div class="left">
             <div class="intro">
               <div class="p2 box">클론 사이트</div>
@@ -127,12 +148,12 @@
         </div>
       </div>
 
+      <div class="swiper-pagination"></div>
       <!-- <div class="swiper-slide section section_4">Some section</div>
       </div> -->
-
-      <div class="footer">
-        <!--footer .container 로드 -->
-      </div>
+    </div>
+    <div class="footer">
+      <!--footer .container 로드 -->
     </div>
 
     <script>
@@ -151,20 +172,20 @@
         },
         speed: 600,
         effect: 'ease',
-        // on: {
-        //   slideChange: function () {
-        //     console.log('slideChange')
-        //     $('.section .right').css('animation', 'smaller 1s ease-in-out')
-        //   },
-        // },
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
       })
 
-      swiper.on('slideChange', function () {
-        console.log(this)
-        console.log(this.activeIndex)
-        $('.section .right').css('animation', 'smaller 1s ease-in-out')
-        // $('.section .left').css('animation', 'smaller 1s')
-      })
+      // swiper.on('slideChange', function () {
+      //   // console.log(this)
+      //   // console.log(this.activeIndex)
+      //   console.log(this.snapIndex)
+      //   $('.section .right').css('animation', 'smaller 1s ease-in-out')
+      //   $('.section .left').css('animation', 'smaller 1s')
+      // })
     </script>
   </body>
 </html>

@@ -259,6 +259,18 @@
 .container .apply img {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
+/*  */
+.container .apply .img {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.apply.one .img {
+  width: 610px;
+  height: 320px;
+  /* background-color: red; */
+  /* display: none; */
+  overflow: hidden;
+}
 
 .container .apply .photo_wrap {
   margin-bottom: 70px;

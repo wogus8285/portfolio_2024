@@ -1,0 +1,128 @@
+/*  ########## 적용1 #######*/
+.section_1 {
+  margin: 0px 0;
+  text-align: center;
+  transform: scale(0.8);
+}
+
+.section_1 h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.section_1 p {
+  color: #777;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.section_1 ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_1 li {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.section_1 a img {
+  width: 120px;
+}
+.section_1 a:hover img {
+  transform: scale(1.1);
+}
+/* 호버 */
+
+.section_1 li a .story {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(105, 162, 84, 0.7),
+    rgba(105, 162, 84, 0.7),
+    rgba(105, 162, 84, 0.8),
+    rgba(105, 162, 84, 0.9),
+    #69a254,
+    #69a254
+  );
+  border-radius: 7px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.section_1 li a .story p {
+  color: #fff;
+  padding: 0 20px;
+  padding-top: 70px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.section_1 li:nth-child(3) a .story p {
+  padding-top: 40px;
+}
+.section_1 li:nth-child(4) a .story p {
+  padding-top: 45px;
+}
+.section_1 li:nth-child(5) a .story p {
+  /* padding-top: 70px; */
+}
+
+.section_1 li:nth-child(2) a .story {
+  background-image: linear-gradient(
+    to bottom,
+
+    rgba(73, 195, 226, 0.7),
+    rgba(73, 195, 226, 0.8),
+    rgba(73, 195, 226, 1),
+    rgba(73, 195, 226, 1)
+  );
+}
+.section_1 li:nth-child(3) a .story {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(43, 25, 101, 0.3),
+    rgba(43, 25, 101, 0.4),
+    rgba(43, 25, 101, 0.5),
+    rgba(43, 25, 101, 0.6),
+    rgba(43, 25, 101, 0.7),
+    rgba(43, 25, 101, 0.8),
+    rgba(43, 25, 101, 0.8),
+    rgba(43, 25, 101, 0.9),
+    rgba(43, 25, 101, 1),
+    rgba(43, 25, 101, 1),
+    rgba(43, 25, 101, 1),
+    rgba(43, 25, 101, 1)
+  );
+}
+.section_1 li:nth-child(4) a .story {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1)
+  );
+}
+.section_1 li:nth-child(5) a .story {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(215, 99, 15, 0.7),
+    rgba(215, 99, 15, 0.8),
+    rgba(215, 99, 15, 1),
+    rgba(215, 99, 15, 1)
+  );
+}
+
+.section_1 li a .story.active {
+  top: 0;
+  transition: all 1s;
+}
