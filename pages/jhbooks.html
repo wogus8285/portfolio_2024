@@ -26,10 +26,10 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <!-- 풀페이지 2.97 -->
+    <!-- 스와이퍼 -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
     <!-- css 내꺼 -->
@@ -50,8 +50,8 @@
     ></script>
     <!-- 스크롤리빌 -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- 풀페이지 2.97 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <!-- 스와이퍼-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -174,9 +174,8 @@
               </div>
               <div class="right">
                 <h6># 재현북스(내가 만든 사이트)</h6>
-                <div class="img">
+                <div class="today_best">
                   <!-- today_best.html => include -->
-
                   <!--  -->
                 </div>
               </div>
@@ -227,7 +226,75 @@
               </div>
               <div class="right">
                 <h6># 재현북스(내가 만든 사이트)</h6>
-                <img src="../images/jh/slide_2.jpg" alt="" />
+                <!-- <img src="../images/jh/slide_2.jpg" alt="" /> -->
+                <div class="inc_slide">
+                  <div class="slider">
+                    <h5>CMO's Pick</h5>
+                    <p class="p2">
+                      마케팅 이사가 직접 최고의 작품만 엄선하여 여러분께 소개해
+                      드립니다!
+                    </p>
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="swiper-zoom-container">
+                            <a href="../pages/novel_1.html">
+                              <img
+                                src="../images/event/slide2_event_slider1.png"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="swiper-zoom-container">
+                            <a href="../pages/novel_4.html">
+                              <img
+                                src="../images/event/slide2_event_slider2.png"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="swiper-zoom-container">
+                            <a href="../pages/novel_6.html">
+                              <img
+                                src="../images/event/slide2_event_slider3.png"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="swiper-zoom-container">
+                            <a href="../pages/novel_1.html">
+                              <img
+                                src="../images/event/slide2_event_slider1.png"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="swiper-zoom-container">
+                            <a href="../pages/novel_4.html">
+                              <img
+                                src="../images/event/slide2_event_slider2.png"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="swiper-zoom-container">
+                            <a href="../pages/novel_6.html">
+                              <a name="fantasy"></a>
+                              <img
+                                src="../images/event/slide2_event_slider3.png"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="text_wrap">
@@ -604,10 +671,31 @@
       // 로드
       $('.header').load('../inc/header.html')
       $('.footer').load('../inc/footer.html')
-      $('.apply.one .img').load('../inc/today_best.html')
+      $('.apply.one .today_best').load('../inc/today_best.html')
     </script>
 
     <!-- apply -->
+    <script>
+      var swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        centeredSlides: true,
+        loop: true,
+        zoom: true,
+        autoplay: {
+          delay: 1500,
+        },
+
+        // spaceBetween: -200,
+        // effect: 'coverflow',
+        // coverflowEffect: {
+        //   rotate: 0,
+        //   stretch: 300,
+        //   depth: 200,
+        //   modifier: 1,
+        //   slideShadows: false,
+        // },
+      })
+    </script>
     <!--  -->
   </body>
 </html>
