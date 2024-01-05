@@ -17,19 +17,10 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
-    <!-- slick slider-->
+    <!-- 스와이퍼 -->
     <link
       rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-    <!-- 풀페이지 2.97 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
     <!-- css 내꺼 -->
@@ -41,27 +32,23 @@
 
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <!-- 슬릭 -->
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+
     <!-- 스크롤리빌 -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- 풀페이지 2.97 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <!-- 스와이퍼-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
   <body>
-    <div class="wrap">
-      <!-- ## header -->
-      <div class="header">
-        <!-- header => load -->
-      </div>
+    <!-- ## header -->
+    <div class="header">
+      <!-- header => load -->
+    </div>
 
-      <!-- ## 풀페이지 -->
-      <div id="fullpage">
-        <div class="section section_1">
+    <!-- ## 스와이퍼-->
+    <div class="swiper" id="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide section section_1">
           <div class="left">
             <div class="intro">
               <div class="p2 box">내가 만든 사이트</div>
@@ -80,13 +67,14 @@
             ></a>
           </div>
 
-          <div class="right">
-            <!-- <img src="../images/jhbook.png" alt="덮혀 있는 책" /> -->
-          </div>
+          <a href="../pages/jhbooks.html">
+            <div class="right">
+              <!-- <img src="../images/jhbook.png" alt="덮혀 있는 책" /> -->
+            </div>
+          </a>
         </div>
 
-        <!-- -->
-        <div class="section section_2">
+        <div class="swiper-slide section section_2">
           <div class="left">
             <div class="intro">
               <div class="p2 box">리뉴얼 사이트</div>
@@ -105,12 +93,14 @@
             ></a>
           </div>
 
-          <div class="right">
-            <!-- <img src="../images/Busan.svg" alt="부산은 준비되었습니다." /> -->
-          </div>
+          <a href="../pages/busanExpo.html">
+            <div class="right">
+              <!-- <img src="../images/Busan.svg" alt="부산은 준비되었습니다." /> -->
+            </div>
+          </a>
         </div>
-        <!-- -->
-        <div class="section section_3">
+
+        <div class="swiper-slide section section_3">
           <div class="left">
             <div class="intro">
               <div class="p2 box">클론 사이트</div>
@@ -129,13 +119,15 @@
             ></a>
           </div>
 
-          <div class="right">
-            <!-- <img src="../images/SamFire.jpg" alt="푸른 불꽃 이미지" /> -->
-          </div>
+          <a href="../pages/samsungfire.html">
+            <div class="right">
+              <!-- <img src="../images/SamFire.jpg" alt="푸른 불꽃 이미지" /> -->
+            </div>
+          </a>
         </div>
       </div>
 
-      <!-- <div class="section section_4">Some section</div>
+      <!-- <div class="swiper-slide section section_4">Some section</div>
       </div> -->
 
       <div class="footer">
@@ -150,11 +142,28 @@
     </script>
 
     <script>
-      $(document).ready(function () {
-        $('#fullpage').fullpage({
-          loopHorizontal: true, // 수평으로 루프
-    scrollBar: true // 스크롤바 활성화
-        })
+      const swiper = new Swiper('.swiper', {
+        direction: 'vertical',
+        loop: true,
+        // cssMode: true,
+        mousewheel: {
+          enabled: true,
+        },
+        speed: 600,
+        effect: 'ease',
+        // on: {
+        //   slideChange: function () {
+        //     console.log('slideChange')
+        //     $('.section .right').css('animation', 'smaller 1s ease-in-out')
+        //   },
+        // },
+      })
+
+      swiper.on('slideChange', function () {
+        console.log(this)
+        console.log(this.activeIndex)
+        $('.section .right').css('animation', 'smaller 1s ease-in-out')
+        // $('.section .left').css('animation', 'smaller 1s')
       })
     </script>
   </body>

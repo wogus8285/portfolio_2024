@@ -1,81 +1,106 @@
-.wrap {
+body {
+  position: relative;
+  height: 100vh;
 }
 
 /* ## 풀페이지 */
-#fullpage .section .fp-tableCell {
+
+@keyframes smaller {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(0.1);
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  /* background-color: red; */
 }
 
-#fullpage .section .left {
+.swiper .section .left {
   padding-top: 170px;
+  z-index: 99;
 }
 
-#fullpage .section .right {
+.swiper .section .right {
 }
 
-/* #fullpage .section .right img {
+/* #swiper .section .right img {
   display: block;
   width: 500px;
   height: 630px;
+  transition: all 0.3s;
 } */
 
-#fullpage .section .right {
+#swiper .section .right {
   width: 500px;
   height: 630px;
   margin-right: 70px;
-  transition: all 0.5s;
 }
 
-#fullpage .section_1 .right {
+#swiper .section_1 .right {
   background: url(../images/jhbook.png);
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
 }
 
-#fullpage .section_2 .right {
+#swiper .section_2 .right {
   background: url(../images/Busan.svg);
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
 }
-#fullpage .section_3 .right {
+#swiper .section_3 .right {
   background: url(../images/SamFire.jpg);
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
 }
-#fullpage .section .right:hover {
-  /* transition: all 1s; */
+#swiper .section .right:hover {
+  transition: all 1s;
 }
-#fullpage .section_1 .right:hover {
+#swiper .section_1 .right:hover {
   background: url(../images/jhbook_hover.png);
 }
-#fullpage .section_2 .right:hover {
+#swiper .section_2 .right:hover {
   background: url(../images/Busan_hover.svg);
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
 }
-#fullpage .section_3 .right:hover {
+#swiper .section_3 .right:hover {
   background: url(../images/SamFire_hover.png);
 }
 
-#fullpage .section .left .intro {
+#swiper .section .left .intro {
   display: flex;
   gap: 10px;
   padding-bottom: 10px;
 }
 
-#fullpage .section .left .intro .p2 {
+#swiper .section .left .intro .p2 {
   padding: 5px 0;
   font-weight: 700;
   color: #555;
 }
 
-#fullpage .section .left .intro .box {
+#swiper .section .left .intro .box {
   font-weight: 600;
   padding: 7px 12px;
   margin-left: 3px;
@@ -83,7 +108,7 @@
   color: #fff;
 }
 
-#fullpage .section a.p3 {
+#swiper .section a.p3 {
   color: #333;
   font-weight: 700;
   display: block;
@@ -91,27 +116,20 @@
   padding-left: 5px;
 }
 
-#fullpage .section .title {
+#swiper .section .title {
   position: relative;
   height: 156px;
   padding-left: 410px;
 }
 
-#fullpage .section h1 {
+#swiper .section h1 {
   position: absolute;
   width: 1920px;
   top: 0;
   left: 0;
   font-weight: 700;
   letter-spacing: -5px;
-  /* line-height: auto; */
+  line-height: auto;
 }
 
-#fullpage .section {
-}
-
-#fullpage .section {
-}
-
-#fullpage .section {
-}
+/* # 슬라이드 이펙트 */
