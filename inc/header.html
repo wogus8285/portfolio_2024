@@ -3,4 +3,43 @@
     <h3>나를 '재현'하다</h3>
   </a>
   <i class="xi-bars"></i>
+  <div class="bk box">
+    <div class="wave -one"></div>
+    <div class="wave -two"></div>
+    <div class="wave -three"></div>
+  </div>
 </div>
+<!--  -->
+<div class="up_btn"><img src="../images/Up_button.png" alt="" /></div>
+<!--메뉴-->
+<div class="menu">
+  <ul class="gnb">
+    <li><a href="../pages/main.html">Intro</a></li>
+    <li><a href="#">Work</a></li>
+    <li><a href="../pages/profile.html">Profile</a></li>
+    <li><a href="#">Video</a></li>
+  </ul>
+</div>
+<!--  -->
+<script>
+  var heroHeight = $('.hero').outerHeight()
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > heroHeight) {
+      $('.up_btn').addClass('show')
+    } else {
+      $('.up_btn').removeClass('show')
+    }
+  })
+
+  $('.up_btn').click(function () {
+    $('html, body').animate({ scrollTop: 0 })
+  })
+</script>
+
+<script>
+  $('.header i.xi-bars').click(function () {
+    $('.header').toggleClass('show')
+    $(this).toggleClass('xi-bars xi-close')
+  })
+</script>

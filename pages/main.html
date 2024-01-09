@@ -26,8 +26,8 @@
     <!-- css 내꺼 -->
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <!-- <link rel="stylesheet" href="../css/footer.css" /> -->
 
     <!-- 제이쿼리 -->
@@ -50,11 +50,11 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide section section_1">
           <!-- 백그라운드 애니 -->
-          <div class="bk box">
+          <!-- <div class="bk box">
             <div class="wave -one"></div>
             <div class="wave -two"></div>
             <div class="wave -three"></div>
-          </div>
+          </div> -->
           <!--  -->
           <div class="left">
             <div class="intro">
@@ -83,11 +83,11 @@
 
         <div class="swiper-slide section section_2">
           <!-- 백그라운드 애니 -->
-          <div class="bk box">
+          <!-- <div class="bk box">
             <div class="wave -one"></div>
             <div class="wave -two"></div>
             <div class="wave -three"></div>
-          </div>
+          </div> -->
           <!--  -->
           <div class="left">
             <div class="intro">
@@ -116,11 +116,11 @@
 
         <div class="swiper-slide section section_3">
           <!-- 백그라운드 애니 -->
-          <div class="bk box">
+          <!-- <div class="bk box">
             <div class="wave -one"></div>
             <div class="wave -two"></div>
             <div class="wave -three"></div>
-          </div>
+          </div> -->
           <!--  -->
           <div class="left">
             <div class="intro">
@@ -171,11 +171,35 @@
           enabled: true,
         },
         speed: 600,
-        effect: 'ease',
+        // effect: 'ease',
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true,
+        },
 
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
+        },
+
+        on: {
+          slideChangeTransitionStart: function () {
+            if ($('.swiper-slide-active').hasClass('section_1')) {
+              $('.wave').addClass('one')
+            } else {
+              $('.wave').removeClass('one')
+            }
+            if ($('.swiper-slide-active').hasClass('section_2')) {
+              $('.wave').addClass('two')
+            } else {
+              $('.wave').removeClass('two')
+            }
+            if ($('.swiper-slide-active').hasClass('section_3')) {
+              $('.wave').addClass('three')
+            } else {
+              $('.wave').removeClass('three')
+            }
+          },
         },
       })
 
@@ -187,5 +211,7 @@
       //   $('.section .left').css('animation', 'smaller 1s')
       // })
     </script>
+
+    <script></script>
   </body>
 </html>
