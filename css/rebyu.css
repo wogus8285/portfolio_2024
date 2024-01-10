@@ -14,11 +14,11 @@
 
 /* # hero */
 .hero {
-  margin-top: 80px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #777;
+  background-color: #dac7c7;
 }
 
 /* 타이틀 */
@@ -44,7 +44,11 @@
 /* 링크 */
 
 .hero .link_work img {
+  display: block;
   width: 30px;
+  position: relative;
+  top: 36px;
+  transition: all 0.9s;
 }
 
 .hero .link_work {
@@ -73,13 +77,11 @@
   font-weight: 600;
   font-size: 14px;
 }
-
-.hero img {
-  display: block;
-  width: 100%;
-  position: relative;
-  z-index: -1;
-  top: 36px;
-  transition: all 0.9s;
+/* 기본설정 */
+.section img {
+  margin: 0 auto;
 }
-/*  */
+/* section 1 */
+.section.first {
+  background: linear-gradient(to bottom, #dac7c7, #e39999);
+}
