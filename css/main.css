@@ -11,7 +11,15 @@ body {
   /* background-color: inherit; */
 }
 
-/* ## 풀페이지 */
+.left .title a {
+  cursor: default;
+}
+
+.left .title h1 {
+  width: 600px !important;
+}
+
+/* ## 스와이퍼 */
 
 .swiper {
   width: 100%;
@@ -66,7 +74,13 @@ body {
   background-repeat: no-repeat;
   object-fit: cover;
 }
-#swiper .section .right:hover {
+#swiper .section_4 .right {
+  background: url(../images/rebyu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+#swiper .section .right {
   transition: all 1s;
 }
 #swiper .section_1 .right:hover {
@@ -80,6 +94,9 @@ body {
 }
 #swiper .section_3 .right:hover {
   background: url(../images/SamFire_hover.png);
+}
+#swiper .section_4 .right:hover {
+  background: url(../images/rebyu_hover.jpg);
 }
 
 #swiper .section .left .intro {

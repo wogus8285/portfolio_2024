@@ -7,6 +7,12 @@ body {
   position: fixed;
 }
 
+.slider {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
 .swiper-wrapper {
   height: 100vh;
 }
@@ -18,6 +24,7 @@ body {
   align-items: center;
   justify-content: center;
   line-height: 1.7;
+  background-color: #fff;
 }
 
 .slide h5 {
@@ -31,4 +38,24 @@ body {
 
 .info {
   width: 552px;
+}
+
+.controll {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: flex;
+  gap: 1200px;
+  justify-content: center;
+}
+
+.controll i {
+  font-weight: bold;
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.4s;
 }

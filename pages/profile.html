@@ -208,6 +208,14 @@
           </div>
         </div>
         <!-- /swiper -->
+        <div class="controll">
+          <div class="btn prev">
+            <i class="xi-angle-left"></i>
+          </div>
+          <div class="btn next">
+            <i class="xi-angle-right"></i>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -217,9 +225,38 @@
     </script>
 
     <script>
-      const swiper = new Swiper('.swiper', {
+      var swiper = new Swiper('.swiper', {
         speed: 400,
         spaceBetween: 100,
+        effect: 'fade',
+        on: {
+          slideChange: function () {
+            var isBeginning = swiper.isBeginning
+            var isEnd = swiper.isEnd
+
+            // 마지막 슬라이드일 때 btn.next 색상 변경
+            if (isEnd) {
+              $('.btn.next i').css('color', '#999')
+            } else {
+              $('.btn.next i').css('color', '#333')
+            }
+
+            // 첫 번째 슬라이드일 때 btn.prev 색상 변경
+            if (isBeginning) {
+              $('.btn.prev i').css('color', '#999')
+            } else {
+              $('.btn.prev i').css('color', '#333')
+            }
+          },
+        },
+      })
+
+      $('.btn.prev').on('click', function () {
+        swiper.slidePrev()
+      })
+
+      $('.btn.next').on('click', function () {
+        swiper.slideNext()
       })
     </script>
   </body>

@@ -14,12 +14,28 @@
 <!--메뉴-->
 <div class="menu">
   <ul class="gnb">
-    <li><a href="../pages/main.html">Intro</a></li>
+    <li><a href="../pages/main.html">Home</a></li>
     <li><a href="#">Work</a></li>
     <li><a href="../pages/profile.html">Profile</a></li>
-    <li><a href="#">Video</a></li>
+    <li><a href="#X" class="show_modal">Video</a></li>
   </ul>
 </div>
+
+<!-- 동영상 모달 -->
+<div class="modal">
+  <div class="modal_container">
+    <video
+      id="videoPlayer"
+      src="../images/video_portfolio.mp4"
+      controls
+      muted
+    ></video>
+  </div>
+</div>
+
+<div class="dimm"></div>
+<!-- ...이후 코드... -->
+
 <!--  -->
 <script>
   var heroHeight = $('.hero').outerHeight()
@@ -41,5 +57,21 @@
   $('.header i.xi-bars').click(function () {
     $('.header').toggleClass('show')
     $(this).toggleClass('xi-bars xi-close')
+  })
+</script>
+
+<script>
+  $(document).ready(function () {
+    $('.show_modal').click(function () {
+      $('.modal').css('display', 'block')
+      $('.dimm').css('display', 'block')
+      $('#videoPlayer')[0].play()
+    })
+
+    $('.dimm').click(function () {
+      $('.modal').css('display', 'none')
+      $('.dimm').css('display', 'none')
+      $('#videoPlayer')[0].pause()
+    })
   })
 </script>
