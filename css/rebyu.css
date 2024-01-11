@@ -14,15 +14,16 @@
 
 /* # hero */
 .hero {
-  padding-top: 80px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #dac7c7;
+  background: linear-gradient(to bottom, #ffe6e6, #dac7c7);
 }
 
 /* 타이틀 */
 .hero .title h2 {
+  margin-top: 30px;
   font-weight: 600;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .hero .link_work {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   gap: 120px;
@@ -84,4 +85,13 @@
 /* section 1 */
 .section.first {
   background: linear-gradient(to bottom, #dac7c7, #e39999);
+}
+.section.second {
+  background: linear-gradient(to bottom, #e49a9a, #e0a8a8);
+}
+.section.fourth {
+  background: linear-gradient(to bottom, #e49a9a, #e0a8a8);
+}
+.section.fifth {
+  background: linear-gradient(to bottom, #e0a8a8, #e39999);
 }
