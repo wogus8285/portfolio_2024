@@ -60,12 +60,13 @@
         <h2 class="title">Work</h2>
         <!-- 웹사이트 -->
         <div class="web">
-          <ul>
+          <ul class="item">
             <li class="jhbooks">
               <h4 class="title_box">Web-site</h4>
               <div class="photo">
                 <img src="../images/jh/jh-scroll.jpg" alt="재현북스 홈페이지" />
               </div>
+              <div class="info">재현북스 : 웹사이트</div>
               <div class="link_work">
                 <ul class="link_wrap">
                   <li>
@@ -114,20 +115,99 @@
                   alt="부산엑스포 홈페이지"
                 />
               </div>
-              <div class="link"></div>
+              <div class="info">부산엑스포 : 리뉴얼사이트</div>
+              <div class="link_work">
+                <ul class="link_wrap">
+                  <li>
+                    <a
+                      href="https://www.figma.com/file/jqHrK3sqip8VEs3JW70jSk/Busan_Expo(copy)?type=design&node-id=0%3A1&mode=design&t=UrRKuEMMcNamrfEV-1"
+                      target="_blank"
+                    >
+                      <img
+                        src="../images/linkToWork/figma.png"
+                        alt="피그마 로고"
+                      />
+                      <h6>Design</h6>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/wogus8285/BusanExpo"
+                      target="_blank"
+                    >
+                      <img
+                        src="../images/linkToWork/github.png"
+                        alt="깃헙 로고"
+                      />
+                      <h6>Code</h6>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://wogus8285.dothome.co.kr/Busan_Expo"
+                      target="_blank"
+                    >
+                      <img
+                        src="../images/linkToWork/expo.png"
+                        alt="재현북스 로고"
+                      />
+                      <h6>Web-site</h6>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="fire">
               <div class="photo">
                 <img src="../images/fire/scroll.jpg" alt="삼성화재 홈페이지" />
               </div>
               <div class="info">삼성화재 : 클론사이트</div>
-              <div class="link"></div>
+              <div class="link_work">
+                <ul class="link_wrap">
+                  <li>
+                    <a
+                      href="https://www.figma.com/file/z3jJqG0JTjrSCwRbiySnON/Samsungfire(copy)?type=design&node-id=0%3A1&mode=design&t=Lp7v2q541KV2qlZ7-1"
+                      target="_blank"
+                    >
+                      <img
+                        src="../images/linkToWork/figma.png"
+                        alt="피그마 로고"
+                      />
+                      <h6>Design</h6>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/wogus8285/samsungfire"
+                      target="_blank"
+                    >
+                      <img
+                        src="../images/linkToWork/github.png"
+                        alt="깃헙 로고"
+                      />
+                      <h6>Code</h6>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://wogus8285.dothome.co.kr/samsungfire"
+                      target="_blank"
+                    >
+                      <img
+                        src="../images/linkToWork/fire.png"
+                        alt="삼성화재 로고"
+                      />
+                      <h6>Web-site</h6>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
         <!--디자인-->
         <div class="design">
-          <ul>
+          <ul class="item">
             <li class="rebyu">
               <h4 class="title_box">Design</h4>
               <div class="photo">
@@ -158,8 +238,16 @@
 
     <script>
       // 로드
-      $('.header').load('../inc/header.html')
-      $('.footer').load('../inc/footer.html')
+      $(".header").load("../inc/header.html")
+      $(".footer").load("../inc/footer.html")
+    </script>
+
+    <script>
+      /* 호버하면 info -> link 나타나게 하기  */
+      $("ul.item li").hover(function () {
+        $(this).find(".link_work").toggleClass("show")
+        $(this).find(".info").toggleClass("hide")
+      })
     </script>
   </body>
 </html>

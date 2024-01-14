@@ -14,25 +14,56 @@ img {
   margin-bottom: 150px;
 }
 
-/* link */
-.body .link_work img {
+/* 타이틀박스 */
+.body > div li:first-child {
+  position: relative;
+}
+
+.title_box {
+  display: inline;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 27px;
+  background-color: #444;
+  color: #fff;
+  position: absolute;
+  top: -75px;
+  left: 10px;
+  border-radius: 2px;
+}
+
+/* ul 공통 */
+ul.item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  width: 408px;
+  /* place-items: center; */
+}
+
+ul.item li {
+}
+
+/* link 공통 */
+ul.item .link_work img {
   width: 30px;
 }
 
-.body .link_work {
+ul.item .link_work {
   height: 89px;
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.body .link_wrap {
+ul.item .link_wrap {
   display: flex;
   gap: 80px;
 }
 
-.body .link_wrap a {
+ul.item .link_wrap a {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -40,17 +71,26 @@ img {
   justify-content: center;
 }
 
-.body .link_wrap h6 {
+ul.item .link_wrap h6 {
   font-weight: 600;
   font-size: 14px;
 }
 /* */
-.body .info {
+ul.item .info {
   height: 89px;
   text-align: center;
   line-height: 89px;
   font-size: 18px;
   font-weight: 500;
+}
+
+/* 호버하면 info -> link 나타나게 하기  */
+
+ul.item .link_work.show {
+  display: flex;
+}
+ul.item .info.hide {
+  display: none;
 }
 
 /* web */
@@ -76,39 +116,19 @@ img {
   position: relative;
   z-index: -1;
   top: 36px;
-  transition: all 0.9s;
+  transition: all 1.3s;
 }
 
 .web .photo:hover img {
   top: -169px;
-  transition: all 2s;
+  transition: all 1.3s;
 }
 
-.web .photo:hover img {
-  top: -169px;
-  transition: all 2s;
+.web .item > li:nth-child(2) .photo:hover img {
+  top: -654px;
+  transition: all 2.7s;
 }
-
-.body ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* 타이틀박스 */
-.body > div li:first-child {
-  position: relative;
-}
-
-.title_box {
-  display: inline;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 12px 27px;
-  background-color: #444;
-  color: #fff;
-  position: absolute;
-  top: -75px;
-  left: 10px;
-  border-radius: 2px;
+.web .item > li:nth-child(3) .photo:hover img {
+  top: -454px;
+  transition: all 2.3s;
 }

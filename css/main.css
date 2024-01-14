@@ -99,6 +99,11 @@ body {
   background: url(../images/rebyu_hover.jpg);
 }
 
+#swiper .section .link_info {
+  position: relative;
+  z-index: 1;
+}
+
 #swiper .section .left .intro {
   display: flex;
   gap: 10px;
@@ -119,7 +124,7 @@ body {
   color: #fff;
 }
 
-#swiper .section a.p3 {
+#swiper .section .p3 {
   color: #333;
   font-weight: 700;
   display: block;

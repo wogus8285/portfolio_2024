@@ -49,25 +49,23 @@
     <div class="swiper" id="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide section section_1">
-          <div class="left">
-            <div class="intro">
-              <div class="p2 box">내가 만든 사이트</div>
-              <div class="p2">재현북스</div>
-            </div>
+          <a href="../pages/jhbooks.html" class="link_info">
+            <div class="left">
+              <div class="intro">
+                <div class="p2 box">내가 만든 사이트</div>
+                <div class="p2">재현북스</div>
+              </div>
 
-            <div class="title">
-              <a href="../pages/jhbooks.html">
+              <div class="title">
                 <h1>
                   헉... 실제로 있는<br />
                   웹사이트가 아니었다고?
                 </h1>
-              </a>
-            </div>
+              </div>
 
-            <a href="../pages/jhbooks.html" class="p3"
-              >자세히보기 <i class="xi-angle-right"></i
-            ></a>
-          </div>
+              <div class="p3">자세히보기 <i class="xi-angle-right"></i></div>
+            </div>
+          </a>
 
           <a href="../pages/jhbooks.html">
             <div class="right"></div>
@@ -75,25 +73,23 @@
         </div>
 
         <div class="swiper-slide section section_2">
-          <div class="left">
-            <div class="intro">
-              <div class="p2 box">리뉴얼 사이트</div>
-              <div class="p2">2030 Busan world Expo</div>
-            </div>
+          <a href="../pages/busanExpo.html" class="link_info">
+            <div class="left">
+              <div class="intro">
+                <div class="p2 box">리뉴얼 사이트</div>
+                <div class="p2">2030 Busan world Expo</div>
+              </div>
 
-            <div class="title">
-              <a href="../pages/busanExpo.html">
+              <div class="title">
                 <h1>
                   웹디가 세계박람회 유치를<br />
                   응원하는 법.txt
                 </h1>
-              </a>
-            </div>
+              </div>
 
-            <a href="../pages/busanExpo.html" class="p3"
-              >자세히보기 <i class="xi-angle-right"></i
-            ></a>
-          </div>
+              <div class="p3">자세히보기 <i class="xi-angle-right"></i></div>
+            </div>
+          </a>
 
           <a href="../pages/busanExpo.html">
             <div class="right">
@@ -103,32 +99,23 @@
         </div>
 
         <div class="swiper-slide section section_3">
-          <!-- 백그라운드 애니 -->
-          <!-- <div class="bk box">
-            <div class="wave -one"></div>
-            <div class="wave -two"></div>
-            <div class="wave -three"></div>
-          </div> -->
-          <!--  -->
-          <div class="left">
-            <div class="intro">
-              <div class="p2 box">클론 사이트</div>
-              <div class="p2">삼성화재 다이렉트</div>
-            </div>
+          <a href="../pages/samsungfire.html" class="link_info">
+            <div class="left">
+              <div class="intro">
+                <div class="p2 box">클론 사이트</div>
+                <div class="p2">삼성화재 다이렉트</div>
+              </div>
 
-            <div class="title">
-              <a href="../pages/samsungfire.html">
+              <div class="title">
                 <h1>
                   너무 똑같아서<br />
                   금융사기인 줄 알았잖아~
                 </h1>
-              </a>
-            </div>
+              </div>
 
-            <a href="../pages/samsungfire.html" class="p3"
-              >자세히보기 <i class="xi-angle-right"></i
-            ></a>
-          </div>
+              <div class="p3">자세히보기 <i class="xi-angle-right"></i></div>
+            </div>
+          </a>
 
           <a href="../pages/samsungfire.html">
             <div class="right">
@@ -174,13 +161,13 @@
 
     <script>
       // 로드
-      $('.header').load('../inc/header.html')
+      $(".header").load("../inc/header.html")
       // $('.footer').load('../inc/footer.html')
     </script>
 
     <script>
-      const swiper = new Swiper('.swiper', {
-        direction: 'vertical',
+      const swiper = new Swiper(".swiper", {
+        direction: "vertical",
         loop: true,
         // cssMode: true,
         mousewheel: {
@@ -194,26 +181,26 @@
         },
 
         pagination: {
-          el: '.swiper-pagination',
+          el: ".swiper-pagination",
           clickable: true,
         },
 
         on: {
           slideChangeTransitionStart: function () {
-            if ($('.swiper-slide-active').hasClass('section_1')) {
-              $('.wave').addClass('one')
+            if ($(".swiper-slide-active").hasClass("section_1")) {
+              $(".wave").addClass("one")
             } else {
-              $('.wave').removeClass('one')
+              $(".wave").removeClass("one")
             }
-            if ($('.swiper-slide-active').hasClass('section_2')) {
-              $('.wave').addClass('two')
+            if ($(".swiper-slide-active").hasClass("section_2")) {
+              $(".wave").addClass("two")
             } else {
-              $('.wave').removeClass('two')
+              $(".wave").removeClass("two")
             }
-            if ($('.swiper-slide-active').hasClass('section_3')) {
-              $('.wave').addClass('three')
+            if ($(".swiper-slide-active").hasClass("section_3")) {
+              $(".wave").addClass("three")
             } else {
-              $('.wave').removeClass('three')
+              $(".wave").removeClass("three")
             }
           },
         },
