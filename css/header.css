@@ -76,9 +76,9 @@
   height: 75px;
   transform-origin: 50% 48%;
   border-radius: 43%;
-  animation: drift 3000ms infinite linear;
+  animation: drift 3000ms infinite linear, rainbow 10s infinite,
+    heart 5s infinite;
   transition: all 1s;
-  animation: rainbow 10s infinite;
 }
 
 .wave.one {
@@ -94,11 +94,11 @@
 }
 
 .wave.-three {
-  animation: drift 5000ms infinite linear;
+  animation: drift 5000ms infinite linear, heart 5s infinite;
 }
 
 .wave.-two {
-  animation: drift 7000ms infinite linear;
+  animation: drift 7000ms infinite linear, heart 5s infinite;
   opacity: 0.1;
   background: yellow;
 }
@@ -163,6 +163,22 @@
     background-color: #ffb6c1; /* 연한 코랄핑크 */
   }
 }
+@keyframes heart {
+  0%,
+  100% {
+    transform: scale(0.99);
+  }
+  25% {
+    transform: scale(1.01);
+  }
+  50% {
+    transform: scale(0.97);
+  }
+  75% {
+    transform: scale(1.03);
+  }
+}
+
 /* 업버튼 */
 
 .up_btn {
@@ -186,6 +202,11 @@
   left: 0;
   width: 100%;
   height: 100vh;
+  background: url(../images/work_outline.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
   background-color: #d48246;
   display: none;
 }

@@ -126,3 +126,124 @@
   top: 0;
   transition: all 1s;
 }
+
+/*  타임 리미티드  */
+/* ## section_2 */
+.section_2 {
+  display: flex;
+  height: 400px;
+  transform: scale(0.8);
+  padding: 30px 50px;
+  position: relative;
+  top: -40px;
+}
+
+.section_2 .left {
+  width: 320px;
+  text-align-last: left;
+}
+
+.section_2 .left h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.section_2 .left p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #777;
+  margin: 20px 0;
+}
+
+.section_2 .left .p2 {
+  font-weight: 300;
+  color: #999;
+  font-size: 16px;
+}
+
+.section_2 .left .time_limit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+/*  */
+.section_2 .left .icon_wrap {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #333;
+  position: relative;
+  left: -10px;
+  top: -10px;
+}
+
+.section_2 .left .time_hour {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 9px;
+  background-color: #fff;
+}
+
+.section_2 .left .time_min {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+
+  transform-origin: 0% 50%;
+  /* transform: rotate(0deg); */
+  transition: all 1.3s;
+}
+/*  */
+.section_2 .right {
+  flex: 1;
+}
+
+.section_2 .right ul {
+  /* width: 100%; */
+  display: flex;
+  gap: 10px;
+}
+
+.section_2 .right img {
+  /* margin-bottom: 10px; */
+}
+
+.section_2 .right .text_box {
+  text-align-last: left;
+}
+.section_2 .right p:first-child {
+  padding-top: 10px;
+}
+.section_2 .right p {
+  font-weight: 600;
+}
+
+.section_2 .right .p3 {
+  color: #999;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.section_2 .right span {
+  color: #ff7455;
+}
+
+/* 호버하며 줄거리 나오게 해도 될듯 */
+.section_2 .photo {
+  overflow: hidden;
+}
+.section_2 .photo img:hover {
+  transform: scale(1.1);
+}
+
+.apply .time_banner {
+  height: 520px;
+}

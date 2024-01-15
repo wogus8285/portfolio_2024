@@ -55,7 +55,27 @@ body {
 .controll i {
   font-weight: bold;
   font-size: 25px;
-  color: #333;
   cursor: pointer;
+  color: #333;
   transition: all 0.4s;
+}
+
+.controll i.prev {
+  color: #999;
+}
+
+/*  */
+.swiper.photo .text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.swiper.photo .text .box {
+  display: flex;
+  gap: 20px;
+}
+
+.swiper.photo h6 {
+  width: 90px;
+  font-weight: 500;
 }

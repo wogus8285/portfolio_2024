@@ -93,6 +93,19 @@ ul.item .info.hide {
   display: none;
 }
 
+/* +아이콘에 호버하면 색깔 주기 */
+.link_work img.hover-image {
+  display: none;
+}
+
+.link_work li:hover img.hover-image {
+  display: inline-block;
+}
+
+.link_work li:hover img.normal-image {
+  display: none;
+}
+
 /* web */
 .photo {
   width: 400px;

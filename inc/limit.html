@@ -1,0 +1,106 @@
+<h6># 작품을 홍보하는 배너</h6>
+<div class="section_2">
+  <div class="left">
+    <h3>E-Book 구매<br />런칭 기념 파격 할인!</h3>
+    <p>24시간 역대급 한정 특가~!!</p>
+    <div class="time_limit">
+      <!--  -->
+      <div class="icon_wrap">
+        <div class="time_hour"></div>
+        <div class="time_min"></div>
+      </div>
+      <h3>02:11:07</h3>
+    </div>
+    <p class="p2">서둘러요, 얼마 남지 않았어요...!</p>
+  </div>
+
+  <!--  -->
+
+  <div class="right">
+    <ul>
+      <li>
+        <a href="./novel_3.html">
+          <div class="photo">
+            <img src="../images/main/cover3.jpg" alt="" />
+          </div>
+          <div class="text_box">
+            <p class="p1">고성의 추방자</p>
+            <p class="p3">9,800원</p>
+            <p class="p2"><span>39.8% </span>5,900원</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./novel_1.html">
+          <div class="photo">
+            <img src="../images/main/cover1.jpg" alt="" />
+          </div>
+          <div class="text_box">
+            <p>사랑은 달밤에서 시작되는 것...</p>
+            <p class="p3">12,800원</p>
+            <p class="p2"><span>46.1% </span>6,900원</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./novel_2.html">
+          <div class="photo">
+            <img src="../images/main/cover2.jpg" alt="" />
+          </div>
+          <div class="text_box">
+            <p>옥타곤 위에 두 남자</p>
+            <p class="p3">19,800원</p>
+            <p class="p2"><span>50.6% </span>9,800원</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  // ## time_limit (자바스크립트)
+  const time = document.querySelector('.time_limit h3')
+  const hurry = document.querySelector('.section_2 .left .p2')
+
+  function getTimes() {
+    const now = new Date()
+
+    const hour = now.getHours()
+    const min = now.getMinutes()
+    const sec = now.getSeconds()
+
+    // console.log(now);
+
+    const hours = `${hour > 13 ? `0${23 - hour}` : `${23 - hour}`}`
+    const minutes = `${min > 49 ? `0${59 - min}` : `${59 - min}`}`
+    const seconds = `${sec > 49 ? `0${59 - sec}` : `${59 - sec}`}`
+
+    // const hours = `${hour < 10 ? `0${hour}` : `${hour}`}`
+    // const minutes = `${min < 10 ? `0${min}` : `${min}`}`
+    // const seconds = `${sec < 10 ? `0${sec}` : `${sec}`}`
+
+    time.innerText = `${hours} : ${minutes} : ${seconds}`
+    hurry.innerText = `서둘러요,  오늘이 ${
+      parseInt(hours) + 1
+    }시간도 남았어요...!`
+  }
+
+  function init() {
+    getTimes()
+    setInterval(getTimes, 500)
+  }
+
+  init()
+
+  // 제이쿼리로 시계 돌리기
+  var turn = 0
+  setInterval(function () {
+    turn++
+    var turnDeg = 360 * turn
+    // .time_min 회전
+    $('.section_2 .left .time_min').css({
+      transform: `rotate(${turnDeg}deg)`,
+    })
+  }, 2000)
+</script>

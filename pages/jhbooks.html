@@ -89,7 +89,16 @@
                   href="https://www.figma.com/file/XDWYIJ9wtS0NZDpXky67Mq/JaehyunBooks?type=design&node-id=8%3A2&mode=design&t=fQ8kCLO3xZk4m2ji-1"
                   target="_blank"
                 >
-                  <img src="../images/linkToWork/figma.png" alt="피그마 로고" />
+                  <img
+                    src="../images/linkToWork/figma.png"
+                    alt="피그마 로고"
+                    class="normal-image"
+                  />
+                  <img
+                    src="../images/linkToWork/figama_hover.png"
+                    alt="피그마 로고 Hover"
+                    class="hover-image"
+                  />
                   <h6>Design</h6>
                 </a>
               </li>
@@ -98,7 +107,16 @@
                   href="https://github.com/wogus8285/Jaehyun_books"
                   target="_blank"
                 >
-                  <img src="../images/linkToWork/github.png" alt="깃헙 로고" />
+                  <img
+                    src="../images/linkToWork/github.png"
+                    alt="깃헙 로고"
+                    class="normal-image"
+                  />
+                  <img
+                    src="../images/linkToWork/github_hover.svg"
+                    alt="깃헙 로고 Hover"
+                    class="hover-image"
+                  />
                   <h6>Code</h6>
                 </a>
               </li>
@@ -109,7 +127,13 @@
                 >
                   <img
                     src="../images/linkToWork/jhbooks.png"
-                    alt="재현북스 로고"
+                    alt="재현북스"
+                    class="normal-image"
+                  />
+                  <img
+                    src="../images/linkToWork/jhbooks_hover.png"
+                    alt="재현북스 Hover"
+                    class="hover-image"
                   />
                   <h6>Web-site</h6>
                 </a>
@@ -431,12 +455,10 @@
 
           <div class="apply">
             <div class="photo_wrap">
-              <div>
-                <h6># 작품을 홍보하는 배너</h6>
-                <img
-                  src="../images/jh/limited_3.jpg"
-                  alt="재현북스의 타임리미티드"
-                />
+              <div class="time_banner">
+                <!--  -->
+                <!-- limit.inc -->
+                <!--  -->
               </div>
             </div>
             <div class="text_wrap">
@@ -446,9 +468,9 @@
                   <p>
                     &nbsp;소셜커머스에서 자주 활용되는, 오늘 하루 동안만
                     할인되는 상품들을 모아 놓은 코너를 기획했다.<br />
-                    &nbsp; ‘당일 자정까지 남은 시간이 화면’에 표시되도록 하고,
-                    그 시간 데이터를 활용하여 오늘이 이제 ‘O’시간도 남지
-                    않았다는 문구를 넣어 사용자의 구매욕구를 자극하고자 했다.
+                    &nbsp;‘당일 자정까지 남은 시간이 화면’에 표시되도록 하고, 그
+                    시간 데이터를 활용하여 오늘이 이제 ‘O’시간도 남지 않았다는
+                    문구를 넣어 사용자의 구매욕구를 자극하고자 했다.
                   </p>
                 </li>
                 <li>
@@ -678,6 +700,7 @@
       $('.header').load('../inc/header.html')
       $('.footer').load('../inc/footer.html')
       $('.apply.one .today_best').load('../inc/today_best.html')
+      $('.time_banner').load('../inc/limit.html')
     </script>
 
     <!-- apply -->

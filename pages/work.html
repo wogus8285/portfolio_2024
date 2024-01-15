@@ -64,10 +64,16 @@
             <li class="jhbooks">
               <h4 class="title_box">Web-site</h4>
               <div class="photo">
-                <img src="../images/jh/jh-scroll.jpg" alt="재현북스 홈페이지" />
+                <a href="../pages/jhbooks.html">
+                  <img
+                    src="../images/jh/jh-scroll.jpg"
+                    alt="재현북스 홈페이지"
+                  />
+                </a>
               </div>
               <div class="info">재현북스 : 웹사이트</div>
               <div class="link_work">
+                <img src="" alt="" />
                 <ul class="link_wrap">
                   <li>
                     <a
@@ -77,6 +83,12 @@
                       <img
                         src="../images/linkToWork/figma.png"
                         alt="피그마 로고"
+                        class="normal-image"
+                      />
+                      <img
+                        src="../images/linkToWork/figama_hover.png"
+                        alt="피그마 로고 Hover"
+                        class="hover-image"
                       />
                       <h6>Design</h6>
                     </a>
@@ -89,6 +101,12 @@
                       <img
                         src="../images/linkToWork/github.png"
                         alt="깃헙 로고"
+                        class="normal-image"
+                      />
+                      <img
+                        src="../images/linkToWork/github_hover.svg"
+                        alt="깃헙 로고 Hover"
+                        class="hover-image"
                       />
                       <h6>Code</h6>
                     </a>
@@ -100,7 +118,13 @@
                     >
                       <img
                         src="../images/linkToWork/jhbooks.png"
-                        alt="재현북스 로고"
+                        alt="재현북스"
+                        class="normal-image"
+                      />
+                      <img
+                        src="../images/linkToWork/jhbooks_hover.png"
+                        alt="재현북스 Hover"
+                        class="hover-image"
                       />
                       <h6>Web-site</h6>
                     </a>
@@ -110,10 +134,12 @@
             </li>
             <li class="expo">
               <div class="photo">
-                <img
-                  src="../images/busan/scroll.jpg"
-                  alt="부산엑스포 홈페이지"
-                />
+                <a href="../pages/busanExpo.html">
+                  <img
+                    src="../images/busan/scroll.jpg"
+                    alt="부산엑스포 홈페이지"
+                  />
+                </a>
               </div>
               <div class="info">부산엑스포 : 리뉴얼사이트</div>
               <div class="link_work">
@@ -126,6 +152,12 @@
                       <img
                         src="../images/linkToWork/figma.png"
                         alt="피그마 로고"
+                        class="normal-image"
+                      />
+                      <img
+                        src="../images/linkToWork/figama_hover.png"
+                        alt="피그마 로고 Hover"
+                        class="hover-image"
                       />
                       <h6>Design</h6>
                     </a>
@@ -138,6 +170,12 @@
                       <img
                         src="../images/linkToWork/github.png"
                         alt="깃헙 로고"
+                        class="normal-image"
+                      />
+                      <img
+                        src="../images/linkToWork/github_hover.svg"
+                        alt="깃헙 로고 Hover"
+                        class="hover-image"
                       />
                       <h6>Code</h6>
                     </a>
@@ -149,7 +187,13 @@
                     >
                       <img
                         src="../images/linkToWork/expo.png"
-                        alt="재현북스 로고"
+                        alt="부산엑스포 로고"
+                        class="normal-image"
+                      />
+                      <img
+                        src="../images/linkToWork/expo_hover.png"
+                        alt="부산엑스포 로고 Hover"
+                        class="hover-image"
                       />
                       <h6>Web-site</h6>
                     </a>
@@ -159,7 +203,12 @@
             </li>
             <li class="fire">
               <div class="photo">
-                <img src="../images/fire/scroll.jpg" alt="삼성화재 홈페이지" />
+                <a href="../pages/samsungfire.html">
+                  <img
+                    src="../images/fire/scroll.jpg"
+                    alt="삼성화재 홈페이지"
+                  />
+                </a>
               </div>
               <div class="info">삼성화재 : 클론사이트</div>
               <div class="link_work">
@@ -172,6 +221,12 @@
                       <img
                         src="../images/linkToWork/figma.png"
                         alt="피그마 로고"
+                        class="normal-image"
+                      />
+                      <img
+                        src="../images/linkToWork/figama_hover.png"
+                        alt="피그마 로고 Hover"
+                        class="hover-image"
                       />
                       <h6>Design</h6>
                     </a>
@@ -184,6 +239,12 @@
                       <img
                         src="../images/linkToWork/github.png"
                         alt="깃헙 로고"
+                        class="normal-image"
+                      />
+                      <img
+                        src="../images/linkToWork/github_hover.svg"
+                        alt="깃헙 로고 Hover"
+                        class="hover-image"
                       />
                       <h6>Code</h6>
                     </a>
@@ -196,6 +257,12 @@
                       <img
                         src="../images/linkToWork/fire.png"
                         alt="삼성화재 로고"
+                        class="normal-image"
+                      />
+                      <img
+                        src="../images/linkToWork/fire_hover.png"
+                        alt="삼성화재 로고"
+                        class="hover-image"
                       />
                       <h6>Web-site</h6>
                     </a>
@@ -238,15 +305,15 @@
 
     <script>
       // 로드
-      $(".header").load("../inc/header.html")
-      $(".footer").load("../inc/footer.html")
+      $('.header').load('../inc/header.html')
+      $('.footer').load('../inc/footer.html')
     </script>
 
     <script>
       /* 호버하면 info -> link 나타나게 하기  */
-      $("ul.item li").hover(function () {
-        $(this).find(".link_work").toggleClass("show")
-        $(this).find(".info").toggleClass("hide")
+      $('ul.item li').hover(function () {
+        $(this).find('.link_work').toggleClass('show')
+        $(this).find('.info').toggleClass('hide')
       })
     </script>
   </body>

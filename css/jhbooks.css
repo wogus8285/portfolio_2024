@@ -123,6 +123,19 @@
   color: #444;
 }
 
+/* +아이콘에 호버하면 색깔 주기 */
+.link_work img.hover-image {
+  display: none;
+}
+
+.link_work li:hover img.hover-image {
+  display: inline-block;
+}
+
+.link_work li:hover img.normal-image {
+  display: none;
+}
+
 /* # 배너 */
 .banner {
   width: 100%;
@@ -221,6 +234,10 @@
 }
 /*  */
 .container .apply .today_best {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.container .apply .section_2 {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
