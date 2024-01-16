@@ -45,10 +45,9 @@
 
 - Main
 
-const swiper = new Swiper(".swiper", {
-direction: "vertical",
-loop: true,
-// cssMode: true,
-mousewheel: {
-enabled: true,
-},d
+const swiper = new Swiper('.swiper', {
+    direction: 'vertical',
+    loop: true,
+    mousewheel: {
+      enabled: true,
+    })
