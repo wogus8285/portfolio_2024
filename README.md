@@ -44,8 +44,9 @@
 ## 사용된 코드
 
 - Main
+
   ```
-  <!-- Swiper 세로 방향 슬라이드 -->
+  <!-- Swiper 세로 방향 슬라이드를 통하여 풀페이지 효과 내기-->
   const swiper = new Swiper('.swiper', {
   direction: 'vertical',
   loop: true,
@@ -54,3 +55,9 @@
   }
   })
   ```
+
+- Work
+
+```
+
+```
