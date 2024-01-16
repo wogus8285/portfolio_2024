@@ -44,3 +44,13 @@
 ## 사용된 코드
 
 - Main
+  ```
+  <!-- Swiper 세로 방향 슬라이드 -->
+  const swiper = new Swiper('.swiper', {
+  direction: 'vertical',
+  loop: true,
+  mousewheel: {
+  enabled: true,
+  }
+  })
+  ```
