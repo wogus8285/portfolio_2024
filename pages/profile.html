@@ -199,7 +199,7 @@
                     &nbsp; 다만, 그것이 어떤 의미인지, 얼마나 무거운 것인지,
                     아는 사람이 된 것 같아요.<br /><br />
                     &nbsp; 저에 대하여 더 알고 싶으시다면, 슬라이드 버튼을
-                    눌러주세요!! .<br /><br />
+                    눌러주세요!! <br /><br />
                   </p>
                 </div>
               </div>
@@ -289,10 +289,9 @@
           <div class="swiper-slide">
             <div class="slide video">
               <video
-                id="videoPlayer"
+                id="video_player"
                 src="../images/video_portfolio.mp4"
                 controls
-                muted
               ></video>
             </div>
           </div>
@@ -324,38 +323,44 @@
     </script>
 
     <script>
-      var swiper = new Swiper('.swiper', {
-        speed: 400,
-        spaceBetween: 100,
-        effect: 'fade',
-        on: {
-          slideChange: function () {
-            var isBeginning = swiper.isBeginning
-            var isEnd = swiper.isEnd
+      $(function () {
+        var swiper = new Swiper('.swiper', {
+          speed: 400,
+          spaceBetween: 100,
+          effect: 'fade',
+          on: {
+            slideChange: function () {
+              var isBeginning = swiper.isBeginning
+              var isEnd = swiper.isEnd
 
-            // 마지막 슬라이드일 때 btn.next 색상 변경
-            if (isEnd) {
-              $('.btn.next i').css('color', '#999')
-            } else {
-              $('.btn.next i').css('color', '#333')
-            }
+              // 마지막 슬라이드일 때 btn.next 색상 변경
+              if (isEnd) {
+                $('.btn.next i').css('color', '#999')
+                console.log($('#videoPlayer'))
+                $('#video_player')[0].play()
+              } else {
+                $('.btn.next i').css('color', '#333')
+                $('#video_player')[0].pause()
+              }
 
-            // 첫 번째 슬라이드일 때 btn.prev 색상 변경
-            if (isBeginning) {
-              $('.btn.prev i').css('color', '#999')
-            } else {
-              $('.btn.prev i').css('color', '#333')
-            }
+              // 첫 번째 슬라이드일 때 btn.prev 색상 변경
+              if (isBeginning) {
+                $('.btn.prev i').css('color', '#999')
+                video.play()
+              } else {
+                $('.btn.prev i').css('color', '#333')
+              }
+            },
           },
-        },
-      })
+        })
 
-      $('.btn.prev').on('click', function () {
-        swiper.slidePrev()
-      })
+        $('.btn.prev').on('click', function () {
+          swiper.slidePrev()
+        })
 
-      $('.btn.next').on('click', function () {
-        swiper.slideNext()
+        $('.btn.next').on('click', function () {
+          swiper.slideNext()
+        })
       })
     </script>
   </body>
