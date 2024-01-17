@@ -164,7 +164,7 @@
           </div>
         </div>
 
-        <div class="banner">
+        <div class="banner" id="parallax-banner">
           <div class="container">
             <div class="logo_img">
               <img src="../images/jh/banner_logo.png" alt="재현북스의 로고" />
@@ -299,7 +299,10 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="swiper-zoom-container">
-                            <a href="../pages/novel_1.html">
+                            <a
+                              href="http://wogus8285.dothome.co.kr/Jaehyun_books/pages/novel_1.html"
+                              target="_blank"
+                            >
                               <img
                                 src="../images/event/slide2_event_slider1.png"
                               />
@@ -308,7 +311,10 @@
                         </div>
                         <div class="swiper-slide">
                           <div class="swiper-zoom-container">
-                            <a href="../pages/novel_4.html">
+                            <a
+                              href="http://wogus8285.dothome.co.kr/Jaehyun_books/pages/novel_4.html"
+                              target="_blank"
+                            >
                               <img
                                 src="../images/event/slide2_event_slider2.png"
                               />
@@ -317,7 +323,10 @@
                         </div>
                         <div class="swiper-slide">
                           <div class="swiper-zoom-container">
-                            <a href="../pages/novel_6.html">
+                            <a
+                              href="http://wogus8285.dothome.co.kr/Jaehyun_books/pages/novel_6.html"
+                              target="_blank"
+                            >
                               <img
                                 src="../images/event/slide2_event_slider3.png"
                               />
@@ -326,7 +335,10 @@
                         </div>
                         <div class="swiper-slide">
                           <div class="swiper-zoom-container">
-                            <a href="../pages/novel_1.html">
+                            <a
+                              href="http://wogus8285.dothome.co.kr/Jaehyun_books/pages/novel_1.html"
+                              target="_blank"
+                            >
                               <img
                                 src="../images/event/slide2_event_slider1.png"
                               />
@@ -335,7 +347,10 @@
                         </div>
                         <div class="swiper-slide">
                           <div class="swiper-zoom-container">
-                            <a href="../pages/novel_4.html">
+                            <a
+                              href="http://wogus8285.dothome.co.kr/Jaehyun_books/pages/novel_4.html"
+                              target="_blank"
+                            >
                               <img
                                 src="../images/event/slide2_event_slider2.png"
                               />
@@ -344,8 +359,10 @@
                         </div>
                         <div class="swiper-slide">
                           <div class="swiper-zoom-container">
-                            <a href="../pages/novel_6.html">
-                              <a name="fantasy"></a>
+                            <a
+                              href="http://wogus8285.dothome.co.kr/Jaehyun_books/pages/novel_6.html"
+                              target="_blank"
+                            >
                               <img
                                 src="../images/event/slide2_event_slider3.png"
                               />
@@ -711,7 +728,7 @@
         loop: true,
         zoom: true,
         autoplay: {
-          delay: 1500,
+          delay: 500,
         },
 
         // spaceBetween: -200,
@@ -726,5 +743,20 @@
       })
     </script>
     <!--  -->
+
+    <script>
+      document.addEventListener('scroll', function () {
+        var scrollTop = window.scrollY
+        var parallaxBanner = document.getElementById('parallax-banner')
+        var logoImg = document.querySelector('#parallax-banner .logo_img img')
+        var textBox = document.querySelector('#parallax-banner .text_box')
+
+        var logoImgTransformValue = 'translateY(' + scrollTop * 0.25 + 'px)'
+        var textBoxTransformValue = 'translateY(' + scrollTop * 0.3 + 'px)'
+
+        logoImg.style.transform = logoImgTransformValue
+        textBox.style.transform = textBoxTransformValue
+      })
+    </script>
   </body>
 </html>

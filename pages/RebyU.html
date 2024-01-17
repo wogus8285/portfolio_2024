@@ -64,13 +64,31 @@
                   href="https://www.figma.com/file/YNXi0PcUvKEsoUXsjrqevD/%EB%A0%88%EB%93%9C%EC%BB%A4%EB%84%A5%ED%8A%B8(%ED%97%8C%ED%98%88)?type=design&node-id=0%3A1&mode=design&t=MJTmhNgdnFmquPOL-1"
                   target="_blank"
                 >
-                  <img src="../images/linkToWork/figma.png" alt="피그마 로고" />
+                  <img
+                    src="../images/linkToWork/figma.png"
+                    alt="피그마 로고"
+                    class="normal-image"
+                  />
+                  <img
+                    src="../images/linkToWork/figama_hover.png"
+                    alt="피그마 로고 Hover"
+                    class="hover-image"
+                  />
                   <h6>Design</h6>
                 </a>
               </li>
               <li>
                 <a href="../images/rebyu/RebyU_app.pdf" target="_blank">
-                  <img src="../images/rebyu/pdf_logo.png" alt="깃헙 로고" />
+                  <img
+                    src="../images/rebyu/pdf_logo.png"
+                    alt="깃헙 로고"
+                    class="normal-image"
+                  />
+                  <img
+                    src="../images/linkToWork/pdf_hover.png"
+                    alt="부산엑스포 로고 Hover"
+                    class="hover-image"
+                  />
                   <h6>Download(pdf)</h6>
                 </a>
               </li>
@@ -105,6 +123,13 @@
       // 로드
       $('.header').load('../inc/header.html')
       $('.footer').load('../inc/footer.html')
+    </script>
+    <script>
+      /* 호버하면 info -> link 나타나게 하기  */
+      $('.link_wrap li').hover(function () {
+        $(this).find('.link_work').toggleClass('show')
+        $(this).find('.info').toggleClass('hide')
+      })
     </script>
   </body>
 </html>

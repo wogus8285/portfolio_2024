@@ -369,3 +369,35 @@
 .footer {
   margin-top: 200px;
 }
+/*  배너 - 패럴랙스 */
+#parallax-banner {
+  height: 500px; /* 원하는 높이로 조절하세요 */
+  overflow: hidden;
+}
+
+#parallax-banner .container {
+  position: relative;
+  height: 100%;
+}
+
+#parallax-banner .logo_img,
+#parallax-banner .text_box {
+  position: absolute;
+  top: 0%;
+  transform: translateY(-50%);
+}
+
+#parallax-banner .logo_img img,
+#parallax-banner .text_box {
+  transition: transform 0.3s ease-out;
+}
+
+#parallax-banner .logo_img {
+  left: 0%;
+}
+
+#parallax-banner .text_box {
+  right: 0%;
+  text-align: right;
+  color: #fff;
+}

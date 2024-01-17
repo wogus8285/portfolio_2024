@@ -77,7 +77,7 @@
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 3000ms infinite linear, rainbow 10s infinite,
-    heart 5s infinite;
+    heart 10s infinite;
   transition: all 1s;
 }
 
@@ -94,11 +94,11 @@
 }
 
 .wave.-three {
-  animation: drift 5000ms infinite linear, heart 5s infinite;
+  animation: drift 5000ms infinite linear, heart 10s infinite;
 }
 
 .wave.-two {
-  animation: drift 7000ms infinite linear, heart 5s infinite;
+  animation: drift 7000ms infinite linear, heart 10s infinite;
   opacity: 0.1;
   background: yellow;
 }
@@ -166,16 +166,16 @@
 @keyframes heart {
   0%,
   100% {
-    transform: scale(0.99);
+    transform: scale(0.9);
   }
-  25% {
-    transform: scale(1.01);
+  20% {
+    transform: scale(1.1);
   }
   50% {
-    transform: scale(0.97);
+    transform: scale(0.8);
   }
-  75% {
-    transform: scale(1.03);
+  80% {
+    transform: scale(1.2);
   }
 }
 

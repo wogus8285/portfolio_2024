@@ -78,6 +78,27 @@
   font-weight: 600;
   font-size: 14px;
 }
+/* 링크 아이콘에 호버 */
+.link_work.show {
+  display: flex;
+}
+.info.hide {
+  display: none;
+}
+
+/* +아이콘에 호버하면 색깔 주기 */
+.link_work img.hover-image {
+  display: none;
+}
+
+.link_work li:hover img.hover-image {
+  display: inline-block;
+}
+
+.link_work li:hover img.normal-image {
+  display: none;
+}
+
 /* 기본설정 */
 .section img {
   margin: 0 auto;

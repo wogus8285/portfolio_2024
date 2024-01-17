@@ -47,6 +47,7 @@ ul.item li {
 /* link 공통 */
 ul.item .link_work img {
   width: 30px;
+  /* height: 30px; */
 }
 
 ul.item .link_work {
@@ -66,7 +67,7 @@ ul.item .link_wrap {
 ul.item .link_wrap a {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  /* gap: 40px; */
   align-items: center;
   justify-content: center;
 }
@@ -123,7 +124,7 @@ ul.item .info.hide {
   background-size: 400px;
 }
 
-.web img {
+.web .photo img {
   display: block;
   width: 100%;
   position: relative;
@@ -144,4 +145,11 @@ ul.item .info.hide {
 .web .item > li:nth-child(3) .photo:hover img {
   top: -454px;
   transition: all 2.3s;
+}
+
+/*  디자인 호버 효과 */
+/* 기본 이미지 숨기기 */
+.design .item li:hover .photo img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
